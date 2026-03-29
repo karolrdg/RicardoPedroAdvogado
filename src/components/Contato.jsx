@@ -1,3 +1,5 @@
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa"
+
 export default function Contato() {
     return (
         <section id="contato" className="bg-gray-100 py-20 px-6">
@@ -15,23 +17,32 @@ export default function Contato() {
                         Entre em contato para agendar seu atendimento ou tirar dúvidas.
                     </p>
 
-                    <div className="space-y-4 text-gray-700">
+                    <div className="space-y-6 text-gray-700">
 
-                        <p>
-                            <strong>Endereço:</strong><br />
-                            Rua Nossa Senhora da Conceição, 443<br />
-                            Sapucaia do Sul/RS
-                        </p>
+                        <div className="flex items-start gap-3">
+                            <FaMapMarkerAlt className="text-secondary mt-1" />
+                            <p>
+                                <strong>Endereço:</strong><br />
+                                Rua Nossa Senhora da Conceição, 443<br />
+                                Sapucaia do Sul/RS
+                            </p>
+                        </div>
 
-                        <p>
-                            <strong>E-mail:</strong><br />
-                            ricardopedros@yahoo.com.br
-                        </p>
+                        <div className="flex items-start gap-3">
+                            <FaEnvelope className="text-secondary mt-1" />
+                            <p>
+                                <strong>E-mail:</strong><br />
+                                ricardopedros@yahoo.com.br
+                            </p>
+                        </div>
 
-                        <p>
-                            <strong>Telefone / WhatsApp:</strong><br />
-                            (51) 98512-8006
-                        </p>
+                        <div className="flex items-start gap-3">
+                            <FaPhoneAlt className="text-secondary mt-1" />
+                            <p>
+                                <strong>Telefone / WhatsApp:</strong><br />
+                                (51) 98512-8006
+                            </p>
+                        </div>
 
                     </div>
 
@@ -40,8 +51,9 @@ export default function Contato() {
                         href="https://api.whatsapp.com/send?phone=5551985128006"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block mt-8 bg-whatsapp hover:bg-whatsapp-hover text-white px-6 py-3 rounded-lg transition transform hover:scale-105 hover:shadow-lg"
+                        className="inline-flex items-center gap-2 mt-8 bg-whatsapp hover:bg-whatsapp-hover text-white px-6 py-3 rounded-lg transition transform hover:scale-105"
                     >
+                        <FaWhatsapp />
                         Agendar Atendimento
                     </a>
 
