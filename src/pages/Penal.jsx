@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+// 1. Importando o ícone de contorno do React Icons
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 export default function Penal() {
     const texto = "Direito Penal"; // texto que será digitado
@@ -18,30 +20,29 @@ export default function Penal() {
         {
             titulo: "Prisão em Flagrante e Delegacia",
             desc: "Acompanhamento imediato em delegacias para garantir que seus direitos constitucionais não sejam violados durante inquérito policial.",
-            icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" // Escudo
+            icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
         },
         {
             titulo: "Audiência de Custódia",
             desc: "Atuação incisiva nas primeiras 24h para demonstrar ao juiz a desnecessidade da prisão preventiva e buscar liberdade provisória.",
-            icon: "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 00-6.001 0M18 7l-3 9m3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" // Balança
+            icon: "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 00-6.001 0M18 7l-3 9m3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
         },
         {
             titulo: "Habeas Corpus",
             desc: "Impetração em Tribunais Estaduais e Superiores (STJ e STF) sempre que houver constrangimento ilegal ou abuso de autoridade.",
-            icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" // Prédio Tribunal
+            icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
         },
         {
             titulo: "Execução Penal",
             desc: "Acompanhamento de quem já cumpre pena, solicitando progressão de regime, livramento condicional e remição de pena.",
-            icon: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" // X (Restrição)
+            icon: "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
         }
     ];
 
     return (
         <main className="bg-foreground text-primary min-h-screen">
-            {/* Hero Subpage - Consistente */}
+            {/* Hero Subpage */}
             <section className="relative bg-primary text-foreground py-28 px-6 text-center overflow-hidden border-b-4 border-secondary/20">
-                {/* Detalhe abstrato de fundo Penal (sutil) */}
                 <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                     <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-red-900 rounded-full blur-3xl"></div>
                 </div>
@@ -72,7 +73,6 @@ export default function Penal() {
                 <div className="grid gap-8 md:grid-cols-2">
                     {demandas.map((item, idx) => (
                         <div key={idx} className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border-l-4 border-secondary/20 hover:border-secondary flex gap-6 items-start">
-                            {/* Ícone Estilizado - Fundo Vermelho Sutil p/ Penal */}
                             <div className="hidden sm:flex items-center justify-center w-14 h-14 rounded-xl bg-red-50 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
                                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={item.icon} />
@@ -111,10 +111,8 @@ export default function Penal() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 px-10 py-5 bg-whatsapp hover:bg-whatsapp-hover text-white font-black text-lg rounded-xl transition-all transform hover:scale-105 shadow-lg"
                         >
-                            {/* Ícone Whatsapp Simples */}
-                            <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.53.909 3.039 1.389 4.625 1.39 5.4 0 9.793-4.393 9.795-9.793 0-2.618-1.02-5.079-2.872-6.932-1.856-1.853-4.316-2.873-6.936-2.873-5.399 0-9.791 4.394-9.794 9.795 0 1.766.47 3.489 1.359 5.002l-.994 3.633 3.717-.974z" />
-                            </svg>
+                            {/* 2. Ícone substituído pelo React Icon IoLogoWhatsapp */}
+                            <IoLogoWhatsapp className="text-2xl" />
                             Falar com Ricardo Pedro
                         </a>
                     </div>

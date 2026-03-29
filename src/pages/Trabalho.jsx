@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+// 1. Importando o ícone de contorno do React Icons
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 export default function Trabalho() {
     const texto = "Direito do Trabalho";
@@ -41,7 +43,6 @@ export default function Trabalho() {
         <main className="bg-foreground text-primary min-h-screen">
             {/* Hero Subpage */}
             <section className="relative bg-primary text-foreground py-28 px-6 text-center overflow-hidden">
-                {/* Detalhe abstrato de fundo */}
                 <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                     <div className="absolute -top-24 -left-24 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
                 </div>
@@ -72,7 +73,6 @@ export default function Trabalho() {
                 <div className="grid gap-8 md:grid-cols-2">
                     {demandas.map((item, idx) => (
                         <div key={idx} className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border-l-4 border-secondary/20 hover:border-secondary flex gap-6">
-                            {/* Ícone Estilizado */}
                             <div className="hidden sm:flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
                                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={item.icon} />
@@ -91,7 +91,7 @@ export default function Trabalho() {
                     ))}
                 </div>
 
-
+                {/* Call to Action Centralizado */}
                 <div className="mt-20 bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
                     <div className="relative z-10">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Precisa de auxílio jurídico especializado?</h3>
@@ -104,10 +104,8 @@ export default function Trabalho() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 px-10 py-5 bg-whatsapp hover:bg-whatsapp-hover text-white font-black text-lg rounded-xl transition-all transform hover:scale-105 shadow-lg"
                         >
-
-                            <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.53.909 3.039 1.389 4.625 1.39 5.4 0 9.793-4.393 9.795-9.793 0-2.618-1.02-5.079-2.872-6.932-1.856-1.853-4.316-2.873-6.936-2.873-5.399 0-9.791 4.394-9.794 9.795 0 1.766.47 3.489 1.359 5.002l-.994 3.633 3.717-.974z" />
-                            </svg>
+                            {/* 2. Ícone atualizado para o React Icon IoLogoWhatsapp */}
+                            <IoLogoWhatsapp className="text-2xl" />
                             Falar com Ricardo Pedro
                         </a>
                     </div>
