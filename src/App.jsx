@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Areas from "./components/Areas"
 import Sobre from "./components/Sobre"
 import Contato from "./components/Contato"
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Areas />
       <Sobre />
       <Contato />
+      <Footer />
     </>
   )
 }
