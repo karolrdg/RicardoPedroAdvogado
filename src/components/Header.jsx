@@ -1,3 +1,5 @@
+import logo from "../assets/logo.webp"
+
 export default function Header() {
     return (
         <header className="bg-primary text-foreground shadow-md">
@@ -5,9 +7,11 @@ export default function Header() {
             <div className="max-w-7xl mx-auto flex justify-between items-center p-6">
 
                 {/* LOGO */}
-                <div className="text-secondary font-bold text-lg">
-                    Seu Logotipo
-                </div>
+                <img
+                    src={logo}
+                    alt="Ricardo Pedro Advocacia"
+                    className="h-10 object-contain"
+                />
 
                 {/* MENU */}
                 <nav className="flex gap-6 items-center">
