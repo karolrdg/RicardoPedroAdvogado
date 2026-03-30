@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 // 1. Importando o ícone de contorno do React Icons
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { HiCheckCircle } from 'react-icons/hi'
 
 export default function Penal() {
     const texto = "Direito Penal"; // texto que será digitado
@@ -87,6 +88,27 @@ export default function Penal() {
                                     {item.desc}
                                 </p>
                             </div>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="mt-8 grid gap-6 md:grid-cols-2">
+                    {[
+                        "Pedidos de Liberdade: revogação e relaxamento de prisão",
+                        "Defesa e Recursos em todas as instâncias"
+                    ].map((texto, index) => (
+                        <div
+                            key={index}
+                            className="flex items-center gap-6 p-6 bg-white rounded-2xl shadow-sm border border-secondary/10 hover:shadow-md transition-all duration-300"
+                        >
+
+                            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/10 text-secondary shrink-0">
+                                <HiCheckCircle className="w-7 h-7" />
+                            </div>
+
+                            <span className="text-primary font-bold text-base md:text-lg leading-tight">
+                                {texto}
+                            </span>
                         </div>
                     ))}
                 </div>

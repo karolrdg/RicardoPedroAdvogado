@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoLogoWhatsapp } from "react-icons/io5";
-// Importando o ícone de check
-import { HiCheckCircle } from "react-icons/hi";
+
 
 export default function Civil() {
     const texto = "Direito Civil";
