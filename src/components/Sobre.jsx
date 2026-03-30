@@ -53,7 +53,7 @@ export default function Sobre() {
                         <p className="text-foreground/80 leading-relaxed">
                             Presta assistência completa nas áreas{" "}
                             <span className="text-secondary font-semibold">
-                                Trabalhista, Penal e Cível
+                                Trabalhista, Penal, Cível e Previdenciária
                             </span>, sempre pautado pela ética, transparência e pelo compromisso inabalável com a justiça.
                         </p>
                     </div>
