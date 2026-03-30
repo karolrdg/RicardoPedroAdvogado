@@ -94,6 +94,9 @@ export default function Header() {
                             <RouterLink to="/civil" className="block px-4 py-2 text-primary hover:bg-secondary hover:text-foreground transition">
                                 Direito Civil
                             </RouterLink>
+                            <RouterLink to="/previdenciario" className="block px-4 py-2 text-primary hover:bg-secondary hover:text-foreground transition">
+                                Direito Previdenciário
+                            </RouterLink>
                         </div>
                     </div>
 
