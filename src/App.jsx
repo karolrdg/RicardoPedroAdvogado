@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Componentes de Layout
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollTopButton from "./components/ScrollTopButton";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -34,7 +35,6 @@ export default function App() {
     document.addEventListener("contextmenu", handleContextMenu);
     document.addEventListener("keydown", handleKeyDown);
 
-    // Limpeza ao desmontar o componente
     return () => {
       document.removeEventListener("contextmenu", handleContextMenu);
       document.removeEventListener("keydown", handleKeyDown);
@@ -55,6 +55,8 @@ export default function App() {
         <Route path="/civil" element={<Civil />} />
         <Route path="/previdenciario" element={<Previdenciario />} />
       </Routes>
+
+      <ScrollTopButton />
 
       <Footer />
     </Router>
