@@ -79,7 +79,7 @@ export default function Civil() {
 
                             {/* Badge de destaque para Inventário */}
                             {item.destaque && (
-                                <span className="absolute -top-3 right-6 bg-secondary text-primary text-[12px] font-black uppercase tracking-wider px-4 py-4 rounded-full shadow-sm">
+                                <span className="absolute -top-5 right-6 bg-secondary text-primary text-[12px] font-black uppercase tracking-wider px-4 py-4 rounded-full shadow-sm">
                                     {item.destaque}
                                 </span>
                             )}
