@@ -14,7 +14,7 @@ export default function Hero() {
             if (i === texto.length) {
                 clearInterval(interval);
             }
-        }, 60); // Velocidade otimizada para frases longas
+        }, 60);
 
         return () => clearInterval(interval);
     }, []);
@@ -22,7 +22,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative bg-primary text-foreground min-h-[65vh] flex flex-col items-center justify-center text-center px-6 py-32 overflow-hidden border-b border-white/5"
+            className="relative bg-primary text-foreground min-h-[20vh] flex flex-col items-center justify-center text-center px-6 py-32 overflow-hidden border-b border-white/5"
         >
             {/* GRAFIA DE LINHAS ABSTRATAS (Textura de fundo) */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none select-none">
@@ -53,7 +53,7 @@ export default function Hero() {
                 {/* DESCRIÇÃO - DESIGN CLEAN */}
                 <p className="max-w-2xl text-foreground/70 text-lg md:text-xl mb-12 leading-relaxed font-light italic">
                     Atuação jurídica de excelência nas áreas{" "}
-                    <span className="text-secondary font-medium not-italic">Trabalhista, Penal e Cível</span>.
+                    <span className="text-secondary font-medium not-italic">Trabalhista, Penal, Cível e Previdenciária</span>.
                     Comprometimento total com a sua tranquilidade e justiça.
                 </p>
 

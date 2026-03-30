@@ -61,7 +61,7 @@ export default function Sobre() {
 
                     <div className="mt-10 pt-6 border-t border-white/10 flex items-center gap-4">
                         <div className="w-10 h-[1px] bg-secondary"></div>
-                        <p className="text-xs uppercase tracking-widest text-foreground/50">OAB/RS Responsável</p>
+                        <p className="text-xs uppercase tracking-widest text-foreground/50">OAB/RS 84.654</p>
                     </div>
                 </div>
             </div>
