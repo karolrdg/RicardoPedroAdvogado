@@ -17,7 +17,6 @@ export default function Header() {
         setIsMobileDropdownOpen(false);
     };
 
-    // Adaptei o renderLink para receber uma flag 'isMobile' e aplicar estilos diferentes
     const renderLink = (to, label, isMobile = false) => {
         const baseClass = isMobile
             ? "block py-3 text-lg font-medium hover:text-secondary transition border-b border-gray-200/10 last:border-0"
@@ -133,6 +132,9 @@ export default function Header() {
                         </RouterLink>
                         <RouterLink to="/civil" className="block py-2 text-foreground/80 hover:text-secondary transition" onClick={closeMenu}>
                             Direito Civil
+                        </RouterLink>
+                        <RouterLink to="/previdenciario" className="block py-2 text-foreground/80 hover:text-secondary transition" onClick={closeMenu}>
+                            Direito Previdenciário
                         </RouterLink>
                     </div>
                 </div>
