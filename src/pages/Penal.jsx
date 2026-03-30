@@ -4,7 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { HiCheckCircle } from 'react-icons/hi'
 
 export default function Penal() {
-    const texto = "Direito Penal"; // texto que será digitado
+    const texto = "Direito Penal";
     const [displayText, setDisplayText] = useState("");
 
     useEffect(() => {
@@ -13,7 +13,7 @@ export default function Penal() {
             setDisplayText(texto.slice(0, i + 1));
             i++;
             if (i === texto.length) clearInterval(interval);
-        }, 120); // velocidade da digitação
+        }, 120);
         return () => clearInterval(interval);
     }, []);
 
