@@ -1,4 +1,4 @@
-import ricardopedro from "../assets/ricardopedro.jpg"
+import ricardopedro from "../assets/ricardopedro.jpeg"
 
 export default function Sobre() {
     return (
@@ -14,7 +14,7 @@ export default function Sobre() {
                         <img
                             src={ricardopedro}
                             alt="Ricardo Pedro Corrêa"
-                            className="w-72 h-80 object-cover rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-700"
+                            className="w-72 h-60 object-cover rounded-2xl shadow-2xl"
                         />
                         {/* Selo de Experiência (Opcional, mas dá um toque UI legal) */}
                         <div className="absolute -bottom-6 -left-6 bg-secondary text-primary font-bold p-4 rounded-lg shadow-lg hidden md:block">

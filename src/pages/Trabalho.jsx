@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 // 1. Importando o ícone de contorno do React Icons
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { HiCheckCircle } from 'react-icons/hi'
 
 export default function Trabalho() {
     const texto = "Direito do Trabalho";
@@ -90,6 +91,29 @@ export default function Trabalho() {
                         </div>
                     ))}
                 </div>
+
+                <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    {[
+                        "Rescisão Indireta",
+                        "Equiparação Salarial",
+                        "Insalubridade/Periculosidade",
+                        "Estabilidade Gestante"
+                    ].map((texto, index) => (
+                        <div
+                            key={index}
+                            className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
+                        >
+                            <div className="flex-shrink-0">
+                                {/* O "Certinho" usando React Icons */}
+                                <HiCheckCircle className="w-6 h-6 text-secondary" />
+                            </div>
+                            <span className="text-primary font-medium text-sm md:text-base">
+                                {texto}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+
 
                 {/* Call to Action Centralizado */}
                 <div className="mt-20 bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
